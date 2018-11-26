@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RathuMakar FM</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="mdb.min.css" rel="stylesheet">
+
+        <style>
+            html, body{
+                font-size: 12px;
+                margin: 0;
+                min-height: 180;
+                padding: 0;
+                width: 200px;
+                height: 200px;
+                background-color: black;
+            }
+           #mainModal{
+                min-height: 180;
+                padding: 0;
+                width: 200px;
+                height: 200px;
+            }
+           .btn-group-xs > .btn, .btn-xs {
+                padding  : .25rem .4rem;
+                font-size  : .875rem;
+                line-height  : .5;
+                border-radius : .2rem;
+            }
+            #thumbnail{
+                margin-top: 20px
+            }
+           
+        </style>
+
+
+
+    </head>
+
+    <body>
+       
+        <section class="container text-center" id="login">
+                <button type="button" id="btn-login" class="btn btn-primary btn-sm">Login</button>
+        </section>
+       
+       <section class="container" id ="maincontent">
+           <div class="text-center" id="thumbnail">
+                <img id="ytThumb" src="thumb.jpg" class="text-right rounded mx-auto d-block" height="90px">
+           </div>
+           <div class="text-center text-white" id="songUrl">
+               <h6>Song Name</h6>
+           </div>
+        <div class="container text-center" id="buttons">
+            <button type="button" id="btn-get" class="btn btn-success btn-sm">Get</button>
+            <button type="button" id="btn-req" class="btn btn-danger btn-sm">Request</button>
+        </div>
+       </section>
+
+
+    </body>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="mdb.min.js"></script>
+    <!-- Main Js -->
+    <script type="text/javascript" src="popup.js"></script>
+    <!-- Youtube Data API -->
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"> </script>
+    <!--Discord Login-->
+    <script src="https://cdn.jsdelivr.net/gh/dusterthefirst/Login-With-Discord@1.5.0/dist/lwd.js"></script>
+</html>
